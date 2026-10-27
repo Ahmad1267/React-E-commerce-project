@@ -58,7 +58,7 @@ export default function Checkout() {
       return
     }
 
-    if (!/^[0-9+ -]{7,12}$/.test(phone)) {
+    if (!/^03\d{9}$/.test(phone)) {
       setErrorPhone("Enter a valid phone number.")
       return
     }
@@ -164,7 +164,7 @@ export default function Checkout() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="03XXXXXXXXX"
-                pattern="[0-9+ -]{7,12}"
+                pattern="[0-9+ \-]{7,12}"
                 title="Enter a valid phone number"
                 className="w-full h-11 border border-gray-300 rounded-md px-3 outline-none focus:border-orange-500 mb-3"
               />

@@ -20,12 +20,12 @@ function Profile() {
           <div className="space-y-4">
             <div>
               <label className="block text-gray-500">Name</label>
-              <input type="text" value={user?.name || ""}  className="w-100 border border-gray-300 rounded-md p-3"/>
+              <input type="text" value={user?.name || ""} readOnly  className="w-100 border border-gray-300 rounded-md p-3"/>
             </div>
 
             <div>
               <label className="block text-gray-500">Email</label>
-              <input type="text" value={user?.signEmail || ""} className="w-100 border border-gray-300 rounded-md p-3"/>
+              <input type="text" value={user?.signEmail || ""} readOnly className="w-100 border border-gray-300 rounded-md p-3"/>
             </div>
 
 
