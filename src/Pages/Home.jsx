@@ -1,77 +1,350 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
-import { useDispatch } from 'react-redux'
-import { increment } from '../Redux/CounterSlice';
-import { decrement } from '../Redux/CounterSlice';
+import { Link } from 'react-router'
+import Slider from './Slider'
+
 
 function Home() {
-    let dispatch = useDispatch();
   return (
 
     <>
-    <Header/>
-       <div className="min-h-screen bg-gray-200 px-5 py-12">
-        <div className=''><button className='bg-white w-[90px] h-[30px] cursor-pointer  rounded-xl' onClick={()=>dispatch(increment())}>Increment</button>
-</div>
-  <div>  <button className='bg-white w-[90px] h-[30px] cursor-pointer rounded-xl mt-2' onClick={()=>dispatch(decrement())}>Decrement</button>
-</div>
+       <div className="min-h-screen w-full bg-gray-100 pb-7">
 
   {/* Main Heading */}
-  <div className="max-w-5xl mx-auto">
-    
-    <h1 className="text-4xl md:text-5xl font-bold">
-      Welcome to Our Products App
+  <div className="max-w-5xl mx-auto flex justify-center">
+    <div>
+    <h1 className="text-4xl md:text-5xl font-bold text-center mt-4">
+      Welcome to Our Products
     </h1>
 
-    <p className="mt-6 text-lg font-serif text-gray-700">
+    <p className="mt-6 text-lg font-serif text-gray-700 text-center">
       Discover a wide range of products in one simple and easy-to-use
       application.
     </p>
 
-    <p className="mt-3 text-lg font-serif text-gray-700">
+    <p className="mt-3 text-lg font-serif text-gray-700 text-center">
       Explore products, check their prices, view ratings, and find detailed
       information about the items you are interested in.
     </p>
+    </div>
   </div>
 
-  {/* Features */}
-  <div className="max-w-5xl mx-auto mt-10 grid md:grid-cols-3 gap-6">
+  {/* Features  */}
+  <div className="max-w-5xl mx-auto mt-10 grid md:grid-cols-3 gap-6 mb-6">
 
-    {/* Easy to Browse */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
       <h2 className="text-2xl font-bold">
-        Easy to Browse
+        <img src="/im26.jfif" alt="" className='rounded-xl' />
       </h2>
-      <p className="mt-3 font-[Tahoma] text-gray-600">
-        Find products quickly with our simple and clean interface.
-      </p>
+
+<div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+
+</div>
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="image1.jfif" alt="" className='h-81 rounded-xl'/>
+      </h2>
+       <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
     </div>
 
-    {/* Product Details */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
-      <h2 className="text-2xl font-bold">
-        Product Details
-      </h2>
-      <p className="mt-3 font-[Tahoma] text-gray-600">
-        View product images, descriptions, prices, and ratings.
-      </p>
-    </div>
-
-    {/* Responsive Design */}
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
       <h2 className="text-2xl font-bold ">
-        Responsive Design
+        <img src="watch.jfif" alt="" className='h-81 w-90 rounded-xl'/>
       </h2>
-      <p className="mt-3 font-[Arial] text-gray-600">
-        Enjoy a smooth experience on desktop, tablet, and mobile devices.
-      </p>
-    </div>
+     <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
 
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
   </div>
 
-  {/* Start Exploring */}
-  <div className="max-w-5xl mx-auto mt-10 bg-white p-8 rounded-xl text-center shadow-lg">
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+       <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="/load.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+   
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="images3.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold ">
+        <img src="img27.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+     <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="/images6.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+     <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="car.webp" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold ">
+        <img src="32.jpg" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+    <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+     <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="/images17.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold">
+        <img src="bike.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>
+
+    
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-500 cursor-pointer">
+      <h2 className="text-2xl font-bold ">
+        <img src="watch11.jfif" alt="" className='h-81 w-90 rounded-xl'/>
+      </h2>
+      <div className="flex justify-between">
+  <div>
+    <p className="mt-2 font-bold text-2xl ml-2">
+      Mini Sports Bike
+    </p>
+
+    <p className="ml-2 text-sm text-gray-500 flex mb-2">
+      458 reviews |
+      <span className="text-yellow-400 font-bold flex ml-1">
+        ★
+        <span className="text-black ml-1">4.5</span>
+      </span>
+    </p>
+  </div>
+
+  <button className="bg-orange-500 rounded-md mt-4 mb-3 mr-2 text-white font-bold w-25 h-10">
+    View Detail
+  </button>
+</div>
+    </div>    
+
+  </div>
+<Slider/>
+  
+  <div className="max-w-5xl mx-auto mt-7 bg-white p-8 rounded-xl text-center shadow-lg ">
     <h2 className="text-3xl font-bold">
       Start Exploring
     </h2>
@@ -79,14 +352,14 @@ function Home() {
     <p className="mt-3 font-[Arial]">
       Explore our products and find something you like!
     </p>
-
-    <button className="mt-5 bg-gray-200  px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300 cursor-pointer">
+    <Link to={"/product"} >
+    <button className="mt-5 bg-orange-500 text-white px-6 py-3 rounded-md font-bold hover:bg-orange-700 transition duration-300 cursor-pointer"> 
       Explore Products
     </button>
+     </Link>
   </div>
 
 </div>
-<Footer/>
 
     </>
   )

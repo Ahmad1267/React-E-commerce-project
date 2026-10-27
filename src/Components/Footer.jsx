@@ -1,45 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 function Footer() {
   return (
-    <div>
-<footer className="bg-gray-900">
-  <div className="max-w-screen-xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div className='w-full'>
+<footer className="bg-slate-800 w-full">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
 
-    <span className="text-sm text-gray-400 text-center">
+    <span className="text-sm text-center text-white leading-relaxed">
       © 2026{" "}
       <a
         href="https://flowbite.com/"
-        className="text-white font-semibold hover:underline"
+        className=" font-semibold hover:underline"
       >
         Flowbite™
       </a>
       . All Rights Reserved.
     </span>
 
-    <ul className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm font-medium text-gray-400">
-      <li>
-        <a href="#" className="hover:text-white transition duration-300">
-          About
-        </a>
-      </li>
+    <ul className="flex flex-wrap justify-center text-white items-center gap-x-4 gap-y-3 md:gap-6 text-sm font-medium ">
 
       <li>
-        <a href="#" className="hover:text-white transition duration-300">
           Privacy Policy
-        </a>
       </li>
 
       <li>
-        <a href="#" className="hover:text-white transition duration-300">
+        
           Licensing
-        </a>
       </li>
 
       <li>
-        <a href="#" className="hover:text-white transition duration-300">
+        <Link to={"/contact"} className="hover:text-white transition duration-300">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
 
