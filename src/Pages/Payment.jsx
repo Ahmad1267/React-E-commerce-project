@@ -72,7 +72,7 @@ export default function Checkout() {
       return
     }
 
-    // Demo payment only — no real money is transferred
+   
     dispatch(clearCart())
     setSuccess(true)
   }

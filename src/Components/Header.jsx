@@ -20,9 +20,9 @@ function Header() {
       setIsLogin(localStorage.getItem("isLogin") === "true")
     };
     window.addEventListener("loginStatusChanged", checkLogin)
-    // return()=>{
-    //   window.removeEventListener("loginStatusChanged", checkLogin)
-    // }
+    return()=>{
+      window.removeEventListener("loginStatusChanged", checkLogin)
+    }
 
   },[])
   useEffect(()=>{

@@ -21,7 +21,7 @@ export default function ProductDetail() {
         setData(res.data)
         setLoading(false)
       })
-    // .then((res)=>console.log(res.data))
+    
   }
   useEffect(() => {
     if (id) {

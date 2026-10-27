@@ -124,7 +124,7 @@ const product = data.products[0];
     <p className='text-emerald-500 text-sm font-semibold'>{product.discountPercentage}%</p>
   </div>
 </div>
-{/* <div className='flex justify-between items-center w-full px-2'> */}
+
  <div className='flex px-2'>
 
  <div className='bg-pink-400 flex justify-center w-9 rounded-md ml-3 mt-1'>
@@ -144,7 +144,7 @@ const product = data.products[0];
   {product.quantity > 0 ? `Stock ${product.quantity}` : "Out of Stock"}
 </p>
  </div>
-{/* </div> */}
+
  </div>
  </Link>
  

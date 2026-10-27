@@ -49,7 +49,7 @@ const nextSlide = () =>{
             </button>
 
             <div className='flex justify-center mt-4 gap-3'>
-                {images.map((image, index)=>(
+                {images.map(( index)=>(
                     <button key={index}
                     onClick={()=>setSlider(index)}
                      className={`h-3 w-3 rounded-full transition-colors ${
